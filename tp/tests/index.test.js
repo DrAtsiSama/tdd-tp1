@@ -4,5 +4,12 @@ describe("TP Yams", () => {
         it("#Doit retourner une liste de 5 valeurs", ()=> {
             expect(yams()).toHaveLength(5)
         });
+        it('#Doit retourner une liste de 5 nombres', () => {
+            const result = yams();
+            result.forEach((value) => {
+              expect(typeof value).toBe('number');
+            });
+          });
+          
     });
 });
