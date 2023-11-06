@@ -1,4 +1,4 @@
-#TP TDD avec Git - Rémy Scherier
+# TP TDD avec Git - Rémy Scherier
 
 Ce TP est conçu pour vous initier au Test-Driven Development (TDD) en utilisant Git :
 
