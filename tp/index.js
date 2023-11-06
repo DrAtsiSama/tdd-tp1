@@ -1,4 +1,4 @@
-const diceGameAnalyser = ()=>{
+function diceGameAnalyser(){
     let numberOfDice = 5;
     let diceResults = [];
 
@@ -15,5 +15,8 @@ function sortNumberAscending(list){
     return list.sort((a, b) => a - b);
 }
 
+const yamsGame = () => {
+    return diceGameAnalyser();
+}
 
-module.exports = diceGameAnalyser;
+module.exports = yamsGame;
