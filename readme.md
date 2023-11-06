@@ -10,11 +10,15 @@ Pour commencer, suivez ces étapes :
 ```markdown
     git clone git@github.com:DrAtsiSama/tdd-tp1.git
 ```
-2. Une fois le dépôt cloné, assurez-vous d'installer les dépendances nécessaires en exécutant la commande :
+2. Dirigez vous dans le dossier en utilisant la commande :
+```markdown
+    cd tp
+```
+3. Une fois le dépôt cloné, assurez-vous d'installer les dépendances nécessaires en exécutant la commande :
 ```markdown
     npm i
 ```
-3. Vous pouvez maintenant lancer les tests à l'aide de la commande :
+4. Vous pouvez maintenant lancer les tests à l'aide de la commande :
 ```markdown
     npm run test
 ```
