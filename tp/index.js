@@ -8,10 +8,12 @@ const diceGameAnalyser = ()=>{
         // ajout du résultat
         diceResults.push(result);
     }
-    const sortResults = diceResults.sort((a, b) => a - b);
-    return sortResults;
-}
+    return sortNumberAscending(diceResults);
+};
 
+function sortNumberAscending(list){
+    return list.sort((a, b) => a - b);
+}
 
 
 module.exports = diceGameAnalyser;

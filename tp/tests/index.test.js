@@ -33,7 +33,6 @@ describe("TP Yams", () => {
                 return true;
               };
             expect(isSorted(result)).toBeFalsy()
-        });
-          
+        });   
     });
 });
