@@ -19,7 +19,27 @@ function sortNumberAscending(list){
 
 // Calcul des figures possibles
 function calculatePoints(game){
-    // nombres de valeurs identiques
+  // nombres de valeurs identiques
+  const identicalDice = findIdenticalValue(game);
+  if(identicalDice > 0){
+    return scoreFigure(game);
+  }
+  return sum(game);
+}
+
+function sum(game){
+  let sum = 0;
+  for(const value of game){
+    sum += value;
+  }
+  return sum;
+}
+
+function scoreFigure(game){
+
+}
+
+function findIdenticalValue(game){
   const valueCount = {};
 
   // Parcourez la liste et comptez les occurrences de chaque valeur
@@ -39,7 +59,6 @@ function calculatePoints(game){
     }
   }
   return identicalCount;
-
 }
 
 // Main
@@ -47,7 +66,7 @@ const yamsGame = () => {
     const game = diceGameAnalyser();
     let score = calculatePoints(game);
 
-    return diceGameAnalyser();
+    return score;
 }
 
-module.exports = {yamsGame, calculatePoints};
+module.exports = {diceGameAnalyser,yamsGame, calculatePoints, findIdenticalValue};
